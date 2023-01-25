@@ -79,11 +79,11 @@ import SwipeToDelete from 'react-swipe-to-delete-ios'
 Knowing the Component structure might help you customise with your own CSS.
 
 ```jsx
-<div id={id} className={`rstdi${deleting ? " deleting" : ""} ${className}`}>
-  <div className={`delete${deleting ? " deleting" : ""}`}>
+<div id={id} className={`rstdi ${className}`}>
+  <div className={`delete`}>
     <button>Delete</button>
   </div>
-  <div className={`content${deleting ? " deleting" : ""}${!touching ? " transition" : ""}`}>
+  <div className={`content${!touching ? " transition" : ""}`}>
     {children}
   </div>
 </div>
